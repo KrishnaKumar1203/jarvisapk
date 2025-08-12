@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.cmu.sphinx.linguist.language.grammar.BatchForcedAlignerGrammarTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-07-31T04:22:47.105Z" hostname="KRISHANJALI" time="0.132">
+  <properties/>
+  <testcase name="testForcedAlignerGrammar" classname="edu.cmu.sphinx.linguist.language.grammar.BatchForcedAlignerGrammarTest" time="0.132"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Jul 31, 2025 9:52:47 AM edu.cmu.sphinx.linguist.dictionary.TextDictionary allocate
+INFO: Loading dictionary from: jar:file:/C:/Users/kksuc/IdeaProjects/Practice/lib/sphinx4-5prealpha-src/sphinx4-data/build/libs/sphinx4-data-5prealpha-SNAPSHOT.jar!/edu/cmu/sphinx/models/en-us/cmudict-en-us.dict
+Jul 31, 2025 9:52:47 AM edu.cmu.sphinx.linguist.dictionary.TextDictionary allocate
+INFO: Loading filler dictionary from: jar:file:/C:/Users/kksuc/IdeaProjects/Practice/lib/sphinx4-5prealpha-src/sphinx4-data/build/libs/sphinx4-data-5prealpha-SNAPSHOT.jar!/edu/cmu/sphinx/models/en-us/en-us/noisedict
+Jul 31, 2025 9:52:47 AM edu.cmu.sphinx.linguist.acoustic.UnitManager getUnit
+INFO: CI Unit: W
+Jul 31, 2025 9:52:47 AM edu.cmu.sphinx.linguist.acoustic.UnitManager getUnit
+INFO: CI Unit: AH
+Jul 31, 2025 9:52:47 AM edu.cmu.sphinx.linguist.acoustic.UnitManager getUnit
+INFO: CI Unit: N
+Jul 31, 2025 9:52:47 AM edu.cmu.sphinx.linguist.acoustic.UnitManager getUnit
+INFO: CI Unit: HH
+Jul 31, 2025 9:52:47 AM edu.cmu.sphinx.linguist.acoustic.UnitManager getUnit
+INFO: CI Unit: T
+Jul 31, 2025 9:52:47 AM edu.cmu.sphinx.linguist.acoustic.UnitManager getUnit
+INFO: CI Unit: UW
+Jul 31, 2025 9:52:47 AM edu.cmu.sphinx.linguist.acoustic.UnitManager getUnit
+INFO: CI Unit: TH
+Jul 31, 2025 9:52:47 AM edu.cmu.sphinx.linguist.acoustic.UnitManager getUnit
+INFO: CI Unit: R
+Jul 31, 2025 9:52:47 AM edu.cmu.sphinx.linguist.acoustic.UnitManager getUnit
+INFO: CI Unit: IY
+]]></system-err>
+</testsuite>

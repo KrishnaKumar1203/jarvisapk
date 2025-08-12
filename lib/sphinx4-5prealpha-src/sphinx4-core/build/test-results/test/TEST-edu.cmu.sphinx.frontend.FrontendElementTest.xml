@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.cmu.sphinx.frontend.FrontendElementTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-07-31T04:22:47.546Z" hostname="KRISHANJALI" time="0.229">
+  <properties/>
+  <testcase name="testElement[0](preempTest, after-preemp.dump)" classname="edu.cmu.sphinx.frontend.FrontendElementTest" time="0.064"/>
+  <testcase name="testElement[1](windowTest, after-window.dump)" classname="edu.cmu.sphinx.frontend.FrontendElementTest" time="0.062"/>
+  <testcase name="testElement[2](fftTest, after-fft.dump)" classname="edu.cmu.sphinx.frontend.FrontendElementTest" time="0.031"/>
+  <testcase name="testElement[3](melTest, after-mel.dump)" classname="edu.cmu.sphinx.frontend.FrontendElementTest" time="0.021"/>
+  <testcase name="testElement[4](dctTest, after-dct.dump)" classname="edu.cmu.sphinx.frontend.FrontendElementTest" time="0.01"/>
+  <testcase name="testElement[5](cmnTest, after-cmn.dump)" classname="edu.cmu.sphinx.frontend.FrontendElementTest" time="0.024"/>
+  <testcase name="testElement[6](feTest, after-feature.dump)" classname="edu.cmu.sphinx.frontend.FrontendElementTest" time="0.017"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

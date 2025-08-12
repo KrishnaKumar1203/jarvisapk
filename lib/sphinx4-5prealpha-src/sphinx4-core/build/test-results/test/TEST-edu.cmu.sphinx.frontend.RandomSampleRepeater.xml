@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.cmu.sphinx.frontend.RandomSampleRepeater" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-07-31T04:23:00.777Z" hostname="KRISHANJALI" time="0.012">
+  <properties/>
+  <testcase name="testInsertAt4 on RandomSampleRepeater" classname="edu.cmu.sphinx.frontend.RandomSampleRepeater" time="0.011"/>
+  <testcase name="testInsertAtBlockEnd on RandomSampleRepeater" classname="edu.cmu.sphinx.frontend.RandomSampleRepeater" time="0.001"/>
+  <testcase name="testInsertAtZero on RandomSampleRepeater" classname="edu.cmu.sphinx.frontend.RandomSampleRepeater" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

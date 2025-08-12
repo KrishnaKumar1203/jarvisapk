@@ -1,0 +1,22 @@
+description = 'Sphinx4 demo applications'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://repo1.maven.org/maven2/' } // Redundant but safe for some network configs
+    maven { url 'https://repository.jboss.org/nexus/content/repositories/releases/' }
+}
+
+dependencies {
+    implementation project(':sphinx4-core')
+    implementation project(':sphinx4-data')
+    
+    // Use Jakarta version if 'javax.xml.bind:jaxb-api:2.3.3' does not resolve
+    implementation 'javax.xml.bind:jaxb-api:2.3.1' // Most reliably available version
+    implementation 'org.glassfish.jaxb:jaxb-runtime:2.3.8'
+    
+}
+
+jar {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    from configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.cmu.sphinx.linguist.language.ngram.trie.NgramTrieTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-07-31T04:22:58.928Z" hostname="KRISHANJALI" time="1.76">
+  <properties/>
+  <testcase name="testNgram" classname="edu.cmu.sphinx.linguist.language.ngram.trie.NgramTrieTest" time="1.76"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Jul 31, 2025 9:52:58 AM edu.cmu.sphinx.linguist.dictionary.TextDictionary allocate
+INFO: Loading dictionary from: file:/C:/Users/kksuc/IdeaProjects/Practice/lib/sphinx4-5prealpha-src/sphinx4-core/build/resources/test/edu/cmu/sphinx/linguist/language/ngram/trie/100.dict
+Jul 31, 2025 9:52:58 AM edu.cmu.sphinx.linguist.dictionary.TextDictionary allocate
+INFO: Loading filler dictionary from: jar:file:/C:/Users/kksuc/IdeaProjects/Practice/lib/sphinx4-5prealpha-src/sphinx4-data/build/libs/sphinx4-data-5prealpha-SNAPSHOT.jar!/edu/cmu/sphinx/models/en-us/en-us/noisedict
+Jul 31, 2025 9:52:58 AM edu.cmu.sphinx.linguist.language.ngram.trie.NgramTrieModel allocate
+INFO: Loading n-gram language model from: file:/C:/Users/kksuc/IdeaProjects/Practice/lib/sphinx4-5prealpha-src/sphinx4-core/build/resources/test/edu/cmu/sphinx/linguist/language/ngram/trie/100.arpa.bin
+]]></system-err>
+</testsuite>

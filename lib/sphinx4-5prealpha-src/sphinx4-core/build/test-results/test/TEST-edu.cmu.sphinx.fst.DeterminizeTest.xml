@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.cmu.sphinx.fst.DeterminizeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-07-31T04:22:47.338Z" hostname="KRISHANJALI" time="0.012">
+  <properties/>
+  <testcase name="testDeterminize" classname="edu.cmu.sphinx.fst.DeterminizeTest" time="0.012"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Load Time: 0.0
+]]></system-err>
+</testsuite>

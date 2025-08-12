@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.cmu.sphinx.frontend.SpeechMarkerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-07-31T04:23:01.817Z" hostname="KRISHANJALI" time="0.001">
+  <properties/>
+  <testcase name="testEndWithoutSilence on SpeechMarkerTest" classname="edu.cmu.sphinx.frontend.SpeechMarkerTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

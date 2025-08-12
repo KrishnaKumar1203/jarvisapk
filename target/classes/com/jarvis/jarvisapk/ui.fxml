@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.jarvis.jarvisapk.Controller">
+
+    <center>
+        <VBox spacing="10">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+            <TextArea fx:id="outputArea" prefHeight="300" wrapText="true" editable="false"/>
+            <HBox spacing="10">
+                <TextField fx:id="inputField" promptText="Enter your question here..." HBox.hgrow="ALWAYS"/>
+                <Button text="Send" onAction="#handleSend"/>
+            </HBox>
+<HBox spacing="10">
+    <Button fx:id="startListeningButton" text="Start Listening" onAction="#handleStartListening"/>
+    <Button fx:id="stopListeningButton" text="Stop Listening" onAction="#handleStopListening"/>
+    <Label fx:id="listeningStatusLabel" text="" style="-fx-text-fill: green;-fx-font-weight: bold;"/>
+
+</HBox>
+            <CheckBox fx:id="speechOutputCheckbox" text="Enable Speech Output"/>
+            <HBox spacing="10">
+                <Button text="Load Text File" onAction="#handleLoadFile"/>
+                <Button text="Save Text File" onAction="#handleSaveFile"/>
+                <Button text="Save chat" onAction="#handleChat"/>
+            </HBox>
+        </VBox>
+    </center>
+
+</BorderPane>

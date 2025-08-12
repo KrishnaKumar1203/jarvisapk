@@ -1,0 +1,7 @@
+com\jarvis\jarvisapk\ApiClient.class
+com\jarvis\jarvisapk\Controller.class
+com\jarvis\jarvisapk\MainApp.class
+com\jarvis\jarvisapk\TextToSpeech.class
+com\jarvis\jarvisapk\ApiClient$Payload.class
+com\jarvis\jarvisapk\ChatHistoryDAO.class
+com\jarvis\jarvisapk\SpeechRecognizer.class

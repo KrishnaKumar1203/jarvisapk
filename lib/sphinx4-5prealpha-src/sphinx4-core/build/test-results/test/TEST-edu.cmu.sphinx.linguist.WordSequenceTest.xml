@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.cmu.sphinx.linguist.WordSequenceTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-07-31T04:23:01.974Z" hostname="KRISHANJALI" time="0.036">
+  <properties/>
+  <testcase name="comparison" classname="edu.cmu.sphinx.linguist.WordSequenceTest" time="0.032"/>
+  <testcase name="equals" classname="edu.cmu.sphinx.linguist.WordSequenceTest" time="0.002"/>
+  <testcase name="getNewest" classname="edu.cmu.sphinx.linguist.WordSequenceTest" time="0.0"/>
+  <testcase name="getOldest" classname="edu.cmu.sphinx.linguist.WordSequenceTest" time="0.0"/>
+  <testcase name="unknownWords" classname="edu.cmu.sphinx.linguist.WordSequenceTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Jul 31, 2025 9:53:01 AM edu.cmu.sphinx.linguist.acoustic.UnitManager getUnit
+INFO: CI Unit: W
+Jul 31, 2025 9:53:01 AM edu.cmu.sphinx.linguist.acoustic.UnitManager getUnit
+INFO: CI Unit: AH
+Jul 31, 2025 9:53:02 AM edu.cmu.sphinx.linguist.acoustic.UnitManager getUnit
+INFO: CI Unit: N
+Jul 31, 2025 9:53:02 AM edu.cmu.sphinx.linguist.acoustic.UnitManager getUnit
+INFO: CI Unit: HH
+Jul 31, 2025 9:53:02 AM edu.cmu.sphinx.linguist.acoustic.UnitManager getUnit
+INFO: CI Unit: T
+Jul 31, 2025 9:53:02 AM edu.cmu.sphinx.linguist.acoustic.UnitManager getUnit
+INFO: CI Unit: UW
+Jul 31, 2025 9:53:02 AM edu.cmu.sphinx.linguist.acoustic.UnitManager getUnit
+INFO: CI Unit: TH
+Jul 31, 2025 9:53:02 AM edu.cmu.sphinx.linguist.acoustic.UnitManager getUnit
+INFO: CI Unit: R
+Jul 31, 2025 9:53:02 AM edu.cmu.sphinx.linguist.acoustic.UnitManager getUnit
+INFO: CI Unit: IY
+Jul 31, 2025 9:53:02 AM edu.cmu.sphinx.linguist.acoustic.UnitManager getUnit
+INFO: CI Unit: Z
+Jul 31, 2025 9:53:02 AM edu.cmu.sphinx.linguist.acoustic.UnitManager getUnit
+INFO: CI Unit: IH
+Jul 31, 2025 9:53:02 AM edu.cmu.sphinx.linguist.acoustic.UnitManager getUnit
+INFO: CI Unit: OW
+Jul 31, 2025 9:53:02 AM edu.cmu.sphinx.linguist.acoustic.UnitManager getUnit
+INFO: CI Unit: S
+Jul 31, 2025 9:53:02 AM edu.cmu.sphinx.linguist.acoustic.UnitManager getUnit
+INFO: CI Unit: K
+]]></system-err>
+</testsuite>

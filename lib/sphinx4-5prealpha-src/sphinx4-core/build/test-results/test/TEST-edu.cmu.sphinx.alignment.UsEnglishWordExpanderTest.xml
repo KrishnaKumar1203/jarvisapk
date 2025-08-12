@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.cmu.sphinx.alignment.UsEnglishWordExpanderTest" tests="32" skipped="0" failures="0" errors="0" timestamp="2025-07-31T04:23:01.851Z" hostname="KRISHANJALI" time="0.069">
+  <properties/>
+  <testcase name="textToWords[0](# . no, $ convertion., . no $ convertion)" classname="edu.cmu.sphinx.alignment.UsEnglishWordExpanderTest" time="0.005"/>
+  <testcase name="textToWords[1](1, 2 3, one two three)" classname="edu.cmu.sphinx.alignment.UsEnglishWordExpanderTest" time="0.009"/>
+  <testcase name="textToWords[2](the answer is 42,, the answer is forty two)" classname="edu.cmu.sphinx.alignment.UsEnglishWordExpanderTest" time="0.0"/>
+  <testcase name="textToWords[3](587, five hundred eighty seven)" classname="edu.cmu.sphinx.alignment.UsEnglishWordExpanderTest" time="0.0"/>
+  <testcase name="textToWords[4](1903, one thousand nine hundred three)" classname="edu.cmu.sphinx.alignment.UsEnglishWordExpanderTest" time="0.0"/>
+  <testcase name="textToWords[5](12011, twelve thousand eleven)" classname="edu.cmu.sphinx.alignment.UsEnglishWordExpanderTest" time="0.0"/>
+  <testcase name="textToWords[6](126166, one hundred twenty six thousand one hundred sixty six)" classname="edu.cmu.sphinx.alignment.UsEnglishWordExpanderTest" time="0.0"/>
+  <testcase name="textToWords[7](9 3/4, nine and three fourth 's)" classname="edu.cmu.sphinx.alignment.UsEnglishWordExpanderTest" time="0.0"/>
+  <testcase name="textToWords[8](October 1st, october first)" classname="edu.cmu.sphinx.alignment.UsEnglishWordExpanderTest" time="0.0"/>
+  <testcase name="textToWords[9](May the 4th be with you, may the fourth be with you)" classname="edu.cmu.sphinx.alignment.UsEnglishWordExpanderTest" time="0.001"/>
+  <testcase name="textToWords[10](7-11, seven to eleven)" classname="edu.cmu.sphinx.alignment.UsEnglishWordExpanderTest" time="0.0"/>
+  <testcase name="textToWords[11](12, 35, twelve thirty five)" classname="edu.cmu.sphinx.alignment.UsEnglishWordExpanderTest" time="0.0"/>
+  <testcase name="textToWords[12](146%, one hundred forty six percent)" classname="edu.cmu.sphinx.alignment.UsEnglishWordExpanderTest" time="0.0"/>
+  <testcase name="textToWords[13](320'000, three hundred twenty thousand)" classname="edu.cmu.sphinx.alignment.UsEnglishWordExpanderTest" time="0.0"/>
+  <testcase name="textToWords[14](120,000, one hundred twenty thousand)" classname="edu.cmu.sphinx.alignment.UsEnglishWordExpanderTest" time="0.0"/>
+  <testcase name="textToWords[15]($35,000, thirty five thousand dollars)" classname="edu.cmu.sphinx.alignment.UsEnglishWordExpanderTest" time="0.0"/>
+  <testcase name="textToWords[16]($1000000, one million dollars)" classname="edu.cmu.sphinx.alignment.UsEnglishWordExpanderTest" time="0.0"/>
+  <testcase name="textToWords[17](U.S. economy, u s economy)" classname="edu.cmu.sphinx.alignment.UsEnglishWordExpanderTest" time="0.001"/>
+  <testcase name="textToWords[18](sweet home Greenbow, AL., sweet home greenbow alabama)" classname="edu.cmu.sphinx.alignment.UsEnglishWordExpanderTest" time="0.0"/>
+  <testcase name="textToWords[19](Henry I, henry the first)" classname="edu.cmu.sphinx.alignment.UsEnglishWordExpanderTest" time="0.0"/>
+  <testcase name="textToWords[20](Chapter XVII, chapter seventeen)" classname="edu.cmu.sphinx.alignment.UsEnglishWordExpanderTest" time="0.0"/>
+  <testcase name="textToWords[21](don't, doesn't, won't, can't, don't doesn't won't can't)" classname="edu.cmu.sphinx.alignment.UsEnglishWordExpanderTest" time="0.001"/>
+  <testcase name="textToWords[22](I've we've, i've we've)" classname="edu.cmu.sphinx.alignment.UsEnglishWordExpanderTest" time="0.0"/>
+  <testcase name="textToWords[23](I've we've it's, i've we've it's)" classname="edu.cmu.sphinx.alignment.UsEnglishWordExpanderTest" time="0.0"/>
+  <testcase name="textToWords[24](Classics of 80s, classics of eighties)" classname="edu.cmu.sphinx.alignment.UsEnglishWordExpanderTest" time="0.001"/>
+  <testcase name="textToWords[25](In 1880s, in eighteen eighties)" classname="edu.cmu.sphinx.alignment.UsEnglishWordExpanderTest" time="0.0"/>
+  <testcase name="textToWords[26](Mulholland Dr., mulholland drive)" classname="edu.cmu.sphinx.alignment.UsEnglishWordExpanderTest" time="0.0"/>
+  <testcase name="textToWords[27](dr. Jekyll and Mr. Hyde., doctor jekyll and mister hyde)" classname="edu.cmu.sphinx.alignment.UsEnglishWordExpanderTest" time="0.0"/>
+  <testcase name="textToWords[28](Mr. &amp; Mrs. smith, mister and missus smith)" classname="edu.cmu.sphinx.alignment.UsEnglishWordExpanderTest" time="0.0"/>
+  <testcase name="textToWords[29](St. Louis Cardinals, saint louis cardinals)" classname="edu.cmu.sphinx.alignment.UsEnglishWordExpanderTest" time="0.0"/>
+  <testcase name="textToWords[30](St. Elmo's fire, saint elmo's fire)" classname="edu.cmu.sphinx.alignment.UsEnglishWordExpanderTest" time="0.0"/>
+  <testcase name="textToWords[31](elm st., elm street)" classname="edu.cmu.sphinx.alignment.UsEnglishWordExpanderTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

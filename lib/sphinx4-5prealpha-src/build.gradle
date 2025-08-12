@@ -1,0 +1,81 @@
+def getRepositoryUsername() {
+    return hasProperty('mavenUsername') ? mavenUsername : ""
+}
+
+def getRepositoryPassword() {
+    return hasProperty('mavenPassword') ? mavenPassword : ""
+}
+
+allprojects {
+    group = 'edu.cmu.sphinx'
+    version = '5prealpha-SNAPSHOT'
+}
+
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'maven-publish'
+
+    repositories {
+        mavenCentral()
+            maven { url 'https://repo1.maven.org/maven2/' } // Redundant but safe for some network configs
+    maven { url 'https://repository.jboss.org/nexus/content/repositories/releases/' }
+    }
+
+    // Fix JAXB javax.xml.bind missing in Java 11+
+    dependencies {
+        implementation 'javax.xml.bind:jaxb-api:2.3.1'
+implementation 'org.glassfish.jaxb:jaxb-runtime:2.3.8'
+
+
+    }
+
+    compileJava.options.encoding = 'UTF-8'
+    javadoc.options.encoding = 'UTF-8'
+
+    // Set Java compatibility to 17 or change if you want
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+
+    // Define sources JAR task
+    tasks.register('sourcesJar', Jar) {
+        archiveClassifier.set('sources')
+        from sourceSets.main.allSource
+    }
+
+    // Define Javadoc JAR task
+    tasks.register('javadocJar', Jar) {
+        archiveClassifier.set('javadoc')
+        from javadoc
+    }
+
+    // Include sourcesJar and javadocJar in published artifacts
+    publishing {
+        publications {
+            mavenJava(MavenPublication) {
+                from components.java
+
+                artifact tasks.named('sourcesJar')
+                artifact tasks.named('javadocJar')
+            }
+        }
+
+        repositories {
+            maven {
+                name = 'sonatype'
+                url = uri("https://oss.sonatype.org/service/local/staging/deploy/maven2/")
+                credentials {
+                    username = getRepositoryUsername()
+                    password = getRepositoryPassword()
+                }
+            }
+            maven {
+                name = 'sonatypeSnapshots'
+                url = uri("https://oss.sonatype.org/content/repositories/snapshots/")
+                credentials {
+                    username = getRepositoryUsername()
+                    password = getRepositoryPassword()
+                }
+            }
+        }
+    }
+}

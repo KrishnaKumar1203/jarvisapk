@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.cmu.sphinx.frontend.DataBlockerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-07-31T04:22:47.338Z" hostname="KRISHANJALI" time="0.0">
+  <properties/>
+  <testcase name="skipLastSamples on DataBlockerTest" classname="edu.cmu.sphinx.frontend.DataBlockerTest" time="0.0"/>
+  <testcase name="testLongInput on DataBlockerTest" classname="edu.cmu.sphinx.frontend.DataBlockerTest" time="0.0"/>
+  <testcase name="testUsualInput on DataBlockerTest" classname="edu.cmu.sphinx.frontend.DataBlockerTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

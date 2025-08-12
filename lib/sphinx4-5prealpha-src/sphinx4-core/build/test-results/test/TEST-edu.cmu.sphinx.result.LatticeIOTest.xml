@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.cmu.sphinx.result.LatticeIOTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-07-31T04:22:50.401Z" hostname="KRISHANJALI" time="2.133">
+  <properties/>
+  <testcase name="testLatticeIO" classname="edu.cmu.sphinx.result.LatticeIOTest" time="2.133"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[09:52:51.118 INFO unitManager          CI Unit: *+NSN+
+09:52:51.118 INFO unitManager          CI Unit: *+SPN+
+09:52:51.118 INFO unitManager          CI Unit: AA
+09:52:51.118 INFO unitManager          CI Unit: AE
+09:52:51.118 INFO unitManager          CI Unit: AH
+09:52:51.118 INFO unitManager          CI Unit: AO
+09:52:51.118 INFO unitManager          CI Unit: AW
+09:52:51.118 INFO unitManager          CI Unit: AY
+09:52:51.118 INFO unitManager          CI Unit: B
+09:52:51.118 INFO unitManager          CI Unit: CH
+09:52:51.118 INFO unitManager          CI Unit: D
+09:52:51.118 INFO unitManager          CI Unit: DH
+09:52:51.118 INFO unitManager          CI Unit: EH
+09:52:51.118 INFO unitManager          CI Unit: ER
+09:52:51.118 INFO unitManager          CI Unit: EY
+09:52:51.118 INFO unitManager          CI Unit: F
+09:52:51.118 INFO unitManager          CI Unit: G
+09:52:51.118 INFO unitManager          CI Unit: HH
+09:52:51.118 INFO unitManager          CI Unit: IH
+09:52:51.118 INFO unitManager          CI Unit: IY
+09:52:51.118 INFO unitManager          CI Unit: JH
+09:52:51.118 INFO unitManager          CI Unit: K
+09:52:51.118 INFO unitManager          CI Unit: L
+09:52:51.118 INFO unitManager          CI Unit: M
+09:52:51.118 INFO unitManager          CI Unit: N
+09:52:51.118 INFO unitManager          CI Unit: NG
+09:52:51.118 INFO unitManager          CI Unit: OW
+09:52:51.118 INFO unitManager          CI Unit: OY
+09:52:51.118 INFO unitManager          CI Unit: P
+09:52:51.118 INFO unitManager          CI Unit: R
+09:52:51.118 INFO unitManager          CI Unit: S
+09:52:51.118 INFO unitManager          CI Unit: SH
+09:52:51.118 INFO unitManager          CI Unit: T
+09:52:51.118 INFO unitManager          CI Unit: TH
+09:52:51.118 INFO unitManager          CI Unit: UH
+09:52:51.118 INFO unitManager          CI Unit: UW
+09:52:51.118 INFO unitManager          CI Unit: V
+09:52:51.118 INFO unitManager          CI Unit: W
+09:52:51.118 INFO unitManager          CI Unit: Y
+09:52:51.118 INFO unitManager          CI Unit: Z
+09:52:51.118 INFO unitManager          CI Unit: ZH
+09:52:51.641 INFO autoCepstrum         Cepstrum component auto-configured as follows: autoCepstrum {MelFrequencyFilterBank, Denoise, DiscreteCosineTransform2, Lifter}
+09:52:51.641 INFO dictionary           Loading dictionary from: jar:file:/C:/Users/kksuc/IdeaProjects/Practice/lib/sphinx4-5prealpha-src/sphinx4-data/build/libs/sphinx4-data-5prealpha-SNAPSHOT.jar!/edu/cmu/sphinx/models/en-us/cmudict-en-us.dict
+09:52:51.705 INFO dictionary           Loading filler dictionary from: jar:file:/C:/Users/kksuc/IdeaProjects/Practice/lib/sphinx4-5prealpha-src/sphinx4-data/build/libs/sphinx4-data-5prealpha-SNAPSHOT.jar!/edu/cmu/sphinx/models/en-us/en-us/noisedict
+09:52:51.705 INFO acousticModelLoader  Loading tied-state acoustic model from: jar:file:/C:/Users/kksuc/IdeaProjects/Practice/lib/sphinx4-5prealpha-src/sphinx4-data/build/libs/sphinx4-data-5prealpha-SNAPSHOT.jar!/edu/cmu/sphinx/models/en-us/en-us
+09:52:51.705 INFO acousticModelLoader  Pool means Entries: 16128
+09:52:51.705 INFO acousticModelLoader  Pool variances Entries: 16128
+09:52:51.705 INFO acousticModelLoader  Pool transition_matrices Entries: 42
+09:52:51.705 INFO acousticModelLoader  Pool senones Entries: 5126
+09:52:51.705 INFO acousticModelLoader  Gaussian weights: mixture_weights. Entries: 15378
+09:52:51.705 INFO acousticModelLoader  Pool senones Entries: 5126
+09:52:51.710 INFO acousticModelLoader  Context Independent Unit Entries: 42
+09:52:51.710 INFO acousticModelLoader  HMM Manager: 137095 hmms
+09:52:51.710 INFO acousticModel        CompositeSenoneSequences: 0
+09:52:51.832 INFO lexTreeLinguist      Max CI Units 43
+09:52:51.832 INFO lexTreeLinguist      Unit table size 79507
+09:52:51.848 INFO speedTracker         # ----------------------------- Timers----------------------------------------
+09:52:51.848 INFO speedTracker         # Name               Count   CurTime   MinTime   MaxTime   AvgTime   TotTime   
+09:52:51.848 INFO speedTracker         Load Dictionary      1       0.0760s   0.0760s   0.0760s   0.0760s   0.0760s   
+09:52:51.848 INFO speedTracker         Load Dictionary      1       0.0640s   0.0640s   0.0640s   0.0640s   0.0640s   
+09:52:51.848 INFO speedTracker         Load AM              1       1.2290s   1.2290s   1.2290s   1.2290s   1.2290s   
+09:52:51.848 INFO speedTracker         Compile              1       0.1220s   0.1220s   0.1220s   0.1220s   0.1220s   
+09:52:52.488 INFO speedTracker            This  Time Audio: 1.64s  Proc: 0.64s  Speed: 0.39 X real time
+09:52:52.488 INFO speedTracker            Total Time Audio: 1.64s  Proc: 0.64s 0.39 X real time
+09:52:52.488 INFO memoryTracker           Mem  Total: 365.00 Mb  Free: 73.09 Mb
+09:52:52.488 INFO memoryTracker           Used: This: 291.91 Mb  Avg: 291.91 Mb  Max: 291.91 Mb
+Loading from C:\Users\kksuc\IdeaProjects\Practice\lib\sphinx4-5prealpha-src\sphinx4-core\tmp.lat
+]]></system-err>
+</testsuite>

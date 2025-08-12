@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.cmu.sphinx.util.props.ConfigurationManagerTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2025-07-31T04:22:47.301Z" hostname="KRISHANJALI" time="0.037">
+  <properties/>
+  <testcase name="testDynamicConfCreation" classname="edu.cmu.sphinx.util.props.ConfigurationManagerTest" time="0.0"/>
+  <testcase name="testDynamicConfiguruationChange" classname="edu.cmu.sphinx.util.props.ConfigurationManagerTest" time="0.007"/>
+  <testcase name="testGetComponentClass" classname="edu.cmu.sphinx.util.props.ConfigurationManagerTest" time="0.01"/>
+  <testcase name="testSerialization" classname="edu.cmu.sphinx.util.props.ConfigurationManagerTest" time="0.009"/>
+  <testcase name="testSerializeDynamicConfiguration" classname="edu.cmu.sphinx.util.props.ConfigurationManagerTest" time="0.007"/>
+  <testcase name="testXmlExtendedConfiguration" classname="edu.cmu.sphinx.util.props.ConfigurationManagerTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

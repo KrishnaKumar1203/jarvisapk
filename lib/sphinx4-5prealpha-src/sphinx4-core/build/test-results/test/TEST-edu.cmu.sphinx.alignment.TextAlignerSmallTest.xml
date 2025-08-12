@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.cmu.sphinx.alignment.TextAlignerSmallTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-07-31T04:23:01.830Z" hostname="KRISHANJALI" time="0.006">
+  <properties/>
+  <testcase name="align[0]([foo, foo], iterable containing [&lt;-1&gt;, &lt;-1&gt;])" classname="edu.cmu.sphinx.alignment.TextAlignerSmallTest" time="0.005"/>
+  <testcase name="align[1]([foo, baz], iterable containing [&lt;2&gt;, &lt;3&gt;])" classname="edu.cmu.sphinx.alignment.TextAlignerSmallTest" time="0.001"/>
+  <testcase name="align[2]([foo, bar, foo, bar, baz, 42], iterable containing [&lt;0&gt;, &lt;1&gt;, &lt;2&gt;, &lt;4&gt;, &lt;5&gt;, &lt;6&gt;])" classname="edu.cmu.sphinx.alignment.TextAlignerSmallTest" time="0.0"/>
+  <testcase name="align[3]([foo, bar, foo, baz, bar], iterable containing [&lt;0&gt;, &lt;1&gt;, &lt;2&gt;, &lt;3&gt;, &lt;4&gt;])" classname="edu.cmu.sphinx.alignment.TextAlignerSmallTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
