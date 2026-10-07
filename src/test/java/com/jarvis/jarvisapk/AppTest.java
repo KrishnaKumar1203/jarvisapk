@@ -1,38 +1,37 @@
 package com.jarvis.jarvisapk;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import org.junit.jupiter.api.Test;
 
-/**
- * Unit test for simple App.
- */
-public class AppTest 
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
-    {
-        super( testName );
+import java.io.IOException;
+import java.io.InputStream;
+import java.nio.charset.StandardCharsets;
+
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class AppTest {
+    @Test
+    void includesTheJavaFxViewAndStylesheetInTheApplicationResources() {
+        assertNotNull(MainApp.class.getResource("/com/jarvis/jarvisapk/ui.fxml"));
+        assertNotNull(MainApp.class.getResource("/com/jarvis/jarvisapk/jarvis.css"));
     }
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
+    @Test
+    void exposesTheConfiguredAutomationActionInTheDesktopView() throws IOException {
+        String view = readResource("/com/jarvis/jarvisapk/ui.fxml");
+
+        assertTrue(view.contains("fx:id=\"automationButton\""),
+                "The desktop view must retain its automation button.");
+        assertTrue(view.contains("onAction=\"#handleRunAutomation\""),
+                "The automation button must be connected to its controller action.");
+        assertTrue(view.contains("fx:id=\"inputField\""),
+                "The desktop view must retain its conversation input.");
     }
 
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
+    private String readResource(String resourcePath) throws IOException {
+        try (InputStream resource = MainApp.class.getResourceAsStream(resourcePath)) {
+            assertNotNull(resource, "Missing application resource: " + resourcePath);
+            return new String(resource.readAllBytes(), StandardCharsets.UTF_8);
+        }
     }
 }

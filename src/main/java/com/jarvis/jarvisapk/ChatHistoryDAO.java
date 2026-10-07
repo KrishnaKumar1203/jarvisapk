@@ -1,51 +1,47 @@
 package com.jarvis.jarvisapk;
-import java.sql.*;
-import java.time.LocalDateTime;
 
-public class ChatHistoryDAO {
-    private static final String DB_PATH = "C:/Users/kksuc/IdeaProjects/Practice/src/test/java/stepDefinations/jarvis-desktop/server/DataBase/memory.accdb";
-    private static final String DB_URL = "jdbc:ucanaccess://" + DB_PATH;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.time.Instant;
 
-    public void saveChat(String userText, String aiResponse) {
-        String sql = "INSERT INTO chat_history (user_text, ai_response, timestamp) VALUES (?, ?, ?)";
-        try {Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
-        try (Connection conn = DriverManager.getConnection(DB_URL);
-             PreparedStatement ps = conn.prepareStatement(sql)) {
-            ps.setString(1, userText);
-            ps.setString(2, aiResponse);
-            ps.setTimestamp(3, Timestamp.valueOf(LocalDateTime.now()));
-            ps.executeUpdate();
-        }
-    } catch (ClassNotFoundException e) {
-        e.printStackTrace();
-        System.err.println("UCanAccess driver not found!");
-    } catch (SQLException e) {
-        e.printStackTrace();
-    
+public final class ChatHistoryDAO {
+    private final Path databasePath;
+
+    public ChatHistoryDAO(Path dataDirectory) {
+        this.databasePath = dataDirectory.resolve("chat-history.db").toAbsolutePath().normalize();
     }
-}
 
-public static void main(String[] args) {
-    // Example usage
-    ChatHistoryDAO dao = new ChatHistoryDAO();
-    dao.saveChat("Hello, Jarvis!", "Hello! How can I assist you today?");
-    System.out.println("Chat saved successfully.");
-}
-
-   /*  public String loadChatHistory() {
-        StringBuilder history = new StringBuilder();
-        String sql = "SELECT * FROM chat_history ORDER BY timestamp";
-        try (Connection conn = DriverManager.getConnection(DB_URL);
-             Statement stmt = conn.createStatement();
-             ResultSet rs = stmt.executeQuery(sql)) {
-            while (rs.next()) {
-                history.append("User: ").append(rs.getString("user_text")).append("\n");
-                history.append("Jarvis: ").append(rs.getString("ai_response")).append("\n");
-                history.append("Time: ").append(rs.getTimestamp("timestamp")).append("\n---\n");
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
+    public void saveChat(String userText, String aiResponse) throws SQLException {
+        try {
+            Files.createDirectories(databasePath.getParent());
+        } catch (java.io.IOException exception) {
+            throw new SQLException("Could not create Jarvis data directory.", exception);
         }
-        return history.toString();
-    }*/
+
+        try (Connection connection = DriverManager.getConnection("jdbc:sqlite:" + databasePath);
+             Statement statement = connection.createStatement()) {
+            statement.execute("""
+                    CREATE TABLE IF NOT EXISTS chat_history (
+                        id INTEGER PRIMARY KEY AUTOINCREMENT,
+                        user_text TEXT NOT NULL,
+                        ai_response TEXT NOT NULL,
+                        created_at TEXT NOT NULL
+                    )
+                    """);
+            try (PreparedStatement insert = connection.prepareStatement("""
+                    INSERT INTO chat_history (user_text, ai_response, created_at)
+                    VALUES (?, ?, ?)
+                    """)) {
+                insert.setString(1, userText);
+                insert.setString(2, aiResponse);
+                insert.setString(3, Instant.now().toString());
+                insert.executeUpdate();
+            }
+        }
+    }
 }

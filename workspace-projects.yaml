@@ -1,0 +1,47 @@
+version: 1
+discovery:
+  root: ${user.home}/IdeaProjects
+  mode: read-only
+  exclude:
+    - jarvisapk
+    - "*.worktrees"
+    - .git
+    - target
+    - build
+    - dist
+    - node_modules
+    - .venv
+    - vendor
+projects:
+  - id: agentic-playwright-mcp-framework
+    capabilities:
+      - TypeScript and JavaScript project discovery
+      - Playwright browser automation concepts
+      - MCP JSON-RPC over stdio concepts
+      - Provider-adapter and environment-configuration patterns
+    integration: Independently implement compatible, credential-safe adapters as needed.
+  - id: claw-code-main
+    capabilities:
+      - Local model and dashboard API interoperability
+    integration: Use only the documented HTTP boundary; do not copy source code.
+    source_reuse: prohibited
+    reason: The repository identifies source as leaked third-party code.
+  - id: demo
+    capabilities:
+      - Java Maven multi-module and reactive backend project discovery
+    integration: Discover project files read-only; do not import unrelated application code.
+  - id: jarvisapk
+    capabilities:
+      - JavaFX desktop assistant
+      - Speech input and output
+      - Configurable AI API client
+      - Multi-format document extraction and workspace catalog
+    integration: current-project
+  - id: Portfolio_Krishna
+    capabilities:
+      - React and TypeScript project discovery
+    integration: Discover frontend source read-only.
+  - id: Practice
+    capabilities:
+      - Java, Maven, Selenium, speech, PDF and OCR project discovery
+    integration: Reimplement only independently useful concepts; never read or copy credentials.

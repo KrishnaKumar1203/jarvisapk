@@ -1,0 +1,30 @@
+app:
+  name: Jarvis Desktop Assistant
+  data-directory: ${user.home}/.jarvis
+
+api:
+  # The Claw local dashboard accepts prompt/model and returns output.
+  protocol: claw
+  endpoint: http://127.0.0.1:5000/api/prompt
+  health-endpoint: http://127.0.0.1:5000/api/status
+  model: local-gemini
+  timeout-seconds: 180
+  # Supported protocols: claw, openai-compatible, anthropic.
+  # Credentials are read from environment variables; never store keys here.
+
+workspace:
+  projects-root: ${user.home}/IdeaProjects
+  max-scan-depth: 8
+
+documents:
+  max-bytes: 33554432
+  max-extracted-characters: 200000
+  ocr:
+    enabled: true
+    language: eng
+    python-fallback: true
+    python-executable: python
+    # Install Tesseract OCR and language data for scanned pages/images.
+
+automation:
+  config-resource: /automation.yaml

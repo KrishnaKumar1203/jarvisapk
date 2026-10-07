@@ -1,0 +1,32 @@
+name: Jarvis feature checks
+
+on:
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+          cache: maven
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: tools/javascript/package-lock.json
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: npm ci --prefix tools/javascript
+      - run: python -m pip install -r tools/python/requirements.txt
+      - run: mvn --batch-mode --no-transfer-progress --settings .mvn/settings.xml -T 1C verify
+      - run: npm test --prefix tools/javascript
+      - run: npm run test:e2e --prefix tools/javascript
+      - run: python -m unittest discover -s tools/python/tests -v

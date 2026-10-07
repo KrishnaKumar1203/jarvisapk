@@ -3,39 +3,64 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.control.Label?>
 
-<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+<BorderPane styleClass="app-shell"
+            xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="com.jarvis.jarvisapk.Controller">
-
+    <top>
+        <HBox alignment="CENTER_LEFT" spacing="16" styleClass="topbar">
+            <VBox spacing="3">
+                <Label text="JARVIS" styleClass="brand-title"/>
+                <Label text="Your private AI workspace" styleClass="brand-subtitle"/>
+            </VBox>
+            <Region HBox.hgrow="ALWAYS"/>
+            <Label text="Checking service…" fx:id="apiStatusLabel" styleClass="status-offline"/>
+        </HBox>
+    </top>
     <center>
-        <VBox spacing="10">
-            <padding>
-                <Insets top="10" right="10" bottom="10" left="10"/>
-            </padding>
-            <TextArea fx:id="outputArea" prefHeight="300" wrapText="true" editable="false"/>
-            <HBox spacing="10">
-                <TextField fx:id="inputField" promptText="Enter your question here..." HBox.hgrow="ALWAYS"/>
-                <Button text="Send" onAction="#handleSend"/>
-            </HBox>
-<HBox spacing="10">
-    <Button fx:id="startListeningButton" text="Start Listening" onAction="#handleStartListening"/>
-    <Button fx:id="stopListeningButton" text="Stop Listening" onAction="#handleStopListening"/>
-    <Label fx:id="listeningStatusLabel" text="" style="-fx-text-fill: green;-fx-font-weight: bold;"/>
-
-</HBox>
-            <CheckBox fx:id="speechOutputCheckbox" text="Enable Speech Output"/>
-            <HBox spacing="10">
-                <Button text="Load Text File" onAction="#handleLoadFile"/>
-                <Button text="Save Text File" onAction="#handleSaveFile"/>
-                <Button text="Save chat" onAction="#handleChat"/>
+        <VBox spacing="14" styleClass="main-content">
+            <VBox spacing="10" styleClass="conversation-card" VBox.vgrow="ALWAYS">
+                <HBox alignment="CENTER_LEFT" spacing="8">
+                    <Label text="Conversation" styleClass="section-title"/>
+                    <Region HBox.hgrow="ALWAYS"/>
+                    <Label text="Messages stay on this device unless sent to your configured API."
+                           styleClass="privacy-note"/>
+                </HBox>
+                <TextArea fx:id="outputArea" wrapText="true" styleClass="conversation-output"
+                          promptText="Your conversation will appear here." VBox.vgrow="ALWAYS"/>
+                <HBox spacing="10">
+                    <TextArea fx:id="inputField" promptText="Ask Jarvis anything…"
+                              prefRowCount="2" wrapText="true"
+                              styleClass="message-input" HBox.hgrow="ALWAYS"/>
+                    <Button fx:id="sendButton" text="Send" onAction="#handleSend"
+                            defaultButton="true" styleClass="primary-button"/>
+                </HBox>
+            </VBox>
+            <HBox alignment="CENTER_LEFT" spacing="9" styleClass="tool-bar">
+                <Button text="Read file" onAction="#handleLoadFile" styleClass="tool-button"/>
+                <Button text="Scan projects" onAction="#handleScanProjects" styleClass="tool-button"/>
+                <Button fx:id="automationButton" text="Run tests" onAction="#handleRunAutomation"
+                        styleClass="tool-button"/>
+                <Button text="Export text" onAction="#handleSaveFile" styleClass="tool-button"/>
+                <Button text="Save chat" onAction="#handleChat" styleClass="tool-button"/>
+                <Region HBox.hgrow="ALWAYS"/>
+                <Button fx:id="startListeningButton" text="Start listening"
+                        onAction="#handleStartListening" styleClass="tool-button"/>
+                <Button fx:id="stopListeningButton" text="Stop" onAction="#handleStopListening"
+                        styleClass="tool-button"/>
+                <CheckBox fx:id="speechOutputCheckbox" text="Speak replies" styleClass="speech-toggle"/>
+                <Label fx:id="listeningStatusLabel" text="" styleClass="listening-status"/>
             </HBox>
         </VBox>
     </center>
-
+    <padding>
+        <Insets top="18" right="18" bottom="18" left="18"/>
+    </padding>
 </BorderPane>

@@ -1,0 +1,134 @@
+.root {
+    -fx-font-family: "Segoe UI", "Inter", sans-serif;
+    -fx-font-size: 13px;
+    -fx-base: #141a2a;
+    -fx-background: #0b1020;
+}
+
+.app-shell {
+    -fx-background-color: linear-gradient(to bottom right, #212044 0%, #11182a 46%, #0b1020 100%);
+}
+
+.topbar {
+    -fx-padding: 14 18;
+    -fx-background-color: rgba(19, 25, 42, 0.92);
+    -fx-background-radius: 16;
+    -fx-border-color: rgba(184, 193, 229, 0.14);
+    -fx-border-radius: 16;
+}
+
+.brand-title {
+    -fx-font-size: 22px;
+    -fx-font-weight: 800;
+    -fx-text-fill: #c9c1ff;
+}
+
+.brand-subtitle,
+.privacy-note {
+    -fx-text-fill: #9ba7c4;
+}
+
+.privacy-note {
+    -fx-font-size: 11px;
+}
+
+.status-online {
+    -fx-text-fill: #75e0b1;
+    -fx-font-weight: 700;
+}
+
+.status-offline {
+    -fx-text-fill: #f0bd76;
+    -fx-font-weight: 700;
+}
+
+.main-content {
+    -fx-padding: 16 0 0;
+}
+
+.conversation-card {
+    -fx-padding: 18;
+    -fx-background-color: rgba(18, 25, 42, 0.92);
+    -fx-background-radius: 18;
+    -fx-border-color: rgba(184, 193, 229, 0.14);
+    -fx-border-radius: 18;
+}
+
+.section-title {
+    -fx-text-fill: #edf0ff;
+    -fx-font-size: 16px;
+    -fx-font-weight: 700;
+}
+
+.conversation-output,
+.message-input,
+.text-area,
+.text-field {
+    -fx-text-fill: #e4e9fb;
+    -fx-prompt-text-fill: #7884a2;
+    -fx-control-inner-background: #0e1424;
+    -fx-background-color: #0e1424;
+    -fx-background-radius: 12;
+    -fx-border-color: rgba(184, 193, 229, 0.16);
+    -fx-border-radius: 12;
+    -fx-highlight-fill: #7264d9;
+    -fx-highlight-text-fill: white;
+}
+
+.conversation-output {
+    -fx-font-size: 13px;
+    -fx-padding: 10;
+}
+
+.conversation-output .content {
+    -fx-background-color: #0e1424;
+}
+
+.message-input {
+    -fx-padding: 12;
+}
+
+.tool-bar {
+    -fx-padding: 12 14;
+    -fx-background-color: rgba(19, 25, 42, 0.9);
+    -fx-background-radius: 14;
+    -fx-border-color: rgba(184, 193, 229, 0.12);
+    -fx-border-radius: 14;
+}
+
+.button {
+    -fx-cursor: hand;
+    -fx-font-weight: 600;
+    -fx-background-radius: 10;
+    -fx-padding: 10 14;
+}
+
+.primary-button {
+    -fx-text-fill: #101426;
+    -fx-background-color: linear-gradient(to right, #c5b7ff, #8de0cb);
+}
+
+.tool-button {
+    -fx-text-fill: #dce2f6;
+    -fx-background-color: #202941;
+    -fx-border-color: rgba(184, 193, 229, 0.18);
+    -fx-border-radius: 10;
+}
+
+.button:hover {
+    -fx-opacity: 0.88;
+}
+
+.speech-toggle,
+.listening-status {
+    -fx-text-fill: #cbd3eb;
+}
+
+.check-box .box {
+    -fx-background-color: #11182a;
+    -fx-border-color: #5f6c8d;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: #8de0cb;
+}

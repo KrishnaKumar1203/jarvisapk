@@ -1,0 +1,21 @@
+name: Feature - Local data and privacy
+
+on:
+  push:
+    paths:
+      - "src/main/java/com/jarvis/jarvisapk/**"
+      - "src/main/resources/application.yaml"
+      - "README.md"
+  pull_request:
+    paths:
+      - "src/main/java/com/jarvis/jarvisapk/**"
+      - "src/main/resources/application.yaml"
+      - "README.md"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    uses: ./.github/workflows/jarvis-feature-checks.yml
